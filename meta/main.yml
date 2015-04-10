@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: meta/repository
+    repository_key: '0x77d026e2eead66bd'
+    repository_url: 'deb http://ppa.launchpad.net/xuzhen666/dnscrypt/ubuntu trusty main'
