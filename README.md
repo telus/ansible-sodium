@@ -2,6 +2,9 @@
 
 The Sodium crypto library [libsodium](https://download.libsodium.org/doc/)
 
+
+[![Build Status](https://travis-ci.org/telusdigital/ansible-sodium.svg?branch=master)](https://travis-ci.org/telusdigital/ansible-sodium)
+
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 Description
