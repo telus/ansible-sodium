@@ -1,0 +1,15 @@
+---
+sudo: required
+# docker is required to run tests
+services: docker
+
+install:
+  - bundle install
+
+script:
+  # run kitchen tests (destroy, create, converge, setup, verify and destroy)
+  - bundle exec kitchen test
+
+notifications:
+  slack:
+    secure: jg+6r3HeCLyW08sY4cWCTNt+abh3ukj42Fn1EcW9sboh5Ohlx8quHsltRCX2ow94wpvlslEUZlyy7FsgAfSlGHqyUkcXCoqKbJgXzRV5APwrfC+WP++2VSh8W+8Ygs8QeP29Y99CK3isMCE/DkCXty+rzP1SIswrJvDmeh2BJ00kEeZUjFr3s7dFyu+02mhAib9lU2BZzlU0MaDysB9PUzdCsZKtuiGqpx2TTFyYoNo/bsnISSAixmrjm69Uaeh8gLAQXOhPC3c85oavIRvsm5BIo2Ux1fqfVFIvnx/2oZNsKbBeDY9+8/GS7D4F0APm2BLd+vJOq4cQYc2yLrXAtbt+k9/jVJpMQI/rym7Vncxquxj6U+xNQ+GkNhx8KXy4g7Ah7WRLZIseGfmrqCVHo1UnJOJjJVOfp1V7qE2nY8Ndzwfk0HkxBE2REfZXwgufcSafQeL2OhKNVUANHVSO4X8t6TA9GWRqx4WY99uoODrMe9GiAkrVGTngHlffjTlWQaD59cauTNkQbb4b10rjtXXobczfyx3PkyNOd4x2CWWEsuZ0B8UV53R6Gh3Hj/7mFDgYrd0cPJ45JqK8kOvK50Aw5cjUUgYiMAvbc5LyumnwspOsyogz3TomIrZnJV7k+NbJ4c66Yt20aH1uxOj9EO2bIkXSztauWAB4FG7wBfk=
